@@ -6,7 +6,6 @@ const  PredictVideos = ({ onSelect, filtered, predicts}) => {
                 return predict.snippet.title.toLowerCase().indexOf(filtered.toLowerCase()) !== -1
             })
             const videoName = felteredPredicts.map(predict => {
-                console.log(predict)
                 return (
                     <div className='item predictItem' key={predict.id.videoId} style={{ cursor: 'pointer', hover: 'red'}} onClick={() => onSelect(predict)}>
                         <div className='content' >

@@ -53,7 +53,6 @@ class App extends React.Component {
   render() {
     const renderToggler = _.debounce((bool) => { this.renderToggler(bool) } , 200)
     const {  selectedVideo, videos } = this.state;
-    console.log(this.state)
     return (
       <div className="ui container">
         <SearchBar onFormSubmit={this.onTermSubmit} predict={this.onVideosPredict} onToggler={renderToggler} />
