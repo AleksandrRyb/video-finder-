@@ -7,7 +7,7 @@ const  PredictVideos = ({ onSelect, filtered, predicts}) => {
             })
             const videoName = felteredPredicts.map(predict => {
                 return (
-                    <div className='item predictItem' key={predict.id.videoId} style={{ cursor: 'pointer', hover: 'red'}} onClick={() => onSelect(predict)}>
+                    <div className='item predictItem' key={predict.id.videoId} style={{ cursor: 'pointer'}} onClick={() => onSelect(predict)}>
                         <div className='content' >
                             <i className='camera icon' />
                             {predict.snippet.title}
